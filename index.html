@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>DOM</h1>
+    <details class="question">
+        <summary><span>Question:01 </span>Write the code to access element which is having id as "text"</summary>
+        <p id="text">Here accessing element by using Id name.</p>
+        <button onclick="toChange1()">click here</button>
+    </details>
+    <details class="question">
+        <summary><span>Question:02 </span>Write the code to access element which is having tag as "h1"</summary>
+        <p>Here accessing element by using tag name</p>
+        <button onclick="toChange2()">click here</button>
+    </details>
+    <details class="question">
+        <summary><span>Question:03 </span>Write the code to access element which is having class as "box"</summary>
+        <p class="box">Here accessing element by using class name</p>
+        <button onclick="toChange3()">click here</button>
+    </details>
+    <details class="question">
+        <summary><span>Question:04 </span>  h1 Hello h1  //   Change the heading from "Hello" to "Hello World" using DOM functions"</summary>
+        <h1 id="question_04">Hello</h1>
+        <button onclick="toChange4()">click here to change</button>
+    </details>
+    <details class="question">
+        <summary><span>Question:05 </span>Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</summary>
+        <p id="question_05">Hello World</p>
+        <button onclick="changeHeading()">Replace Text</button>
+    </details>
+    <details class="question">
+        <summary><span>Question:06 </span> h1 Hello h1 //
+
+            Add one style attribute and give text color as red and id attribute and give the id value as "heading" in the above given h1 tag using DOM functions"</summary>
+        <h1 id="heading">Hello</h1>
+        <button onclick="toChange6()">click here to change</button>
+    </details>
+    <details class="question">
+        <summary><span>Question:07 </span>Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</summary>
+        <section>
+            <div class="container">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <button id="changeDirection">Change Direction</button>
+        </section>
+    </details>
+    <details class="question">
+        <summary><span>Question:08 </span>What's the difference between window vs document?</summary>
+        <p class="question_08 ">In the context of web development and browser scripting, "document" and "window" refer to two different objects that are part of the Document Object Model (DOM) and represent different aspects of a web page. Here's the difference between them:</p>
+        <table class="grid_container ">
+            <tr>
+                <th id="window">Window</th>
+                <th id="document">Document</th>
+            </tr>
+                <td class="diff" id="diff_w1">The window object represents the browser window or tab in which the web page is loaded.</td>
+                <td class="diff" id="diff_d1">The document object represents the HTML content of the current web page. It is a property of the global window object</td>
+            <tr></tr>
+            <tr>
+                <td class="diff" id="diff_w2">It serves as the global object in the browser's JavaScript environment and provides methods and properties for controlling the browser and interacting with the user.</td>
+                <td class="diff" id="diff_d2">It provides an interface to access and manipulate the elements, content, and structure of the web page.</td>
+            </tr>
+            <tr>
+                <td class="diff" id="diff_w3">The window object includes methods for opening new browser windows or tabs (open()), navigating to different URLs (location), setting timeouts/intervals (setTimeout(), setInterval()), and handling user interactions.</td>
+                <td class="diff" id="diff_d3">You can use methods like getElementById(), querySelector(), and properties like innerHTML to modify the content of the web page.</td>
+            </tr>
+            <tr>
+                <td class="diff" id="diff_w4">The window object also encompasses properties related to the browser environment, such as the screen dimensions, history, and more.</td>
+                <td class="diff" id="diff_d4">The document object is essentially a representation of the entire HTML document, including all its elements, text, and attributes.</td>  
+            </tr>
+        </table>
+        <p class="question_08 ">In summary, the document object is focused on the content and structure of the web page itself, while the window object provides control over the browser window and its interactions with the user. They are both integral parts of web development and are used to create dynamic and interactive web pages.</p>
+    </details>
+    <details class="question">
+        <summary><span>Question:09 </span>Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</summary>
+        <div class="time">
+            <div class="timeBox">
+                <p id="hrs">10</p>
+                <p id="HrH">Hour Hand</p>
+            </div>
+            <span class="time_colon">:</span>
+            <div class="timeBox">
+                <p id="mins">30</p>
+                <p id="minH">Minute Hand</p>
+            </div>
+            <span class="time_colon">:</span>
+            <div class="timeBox">
+                <p id="secs">30</p>
+                <p id="secH">Second Hand</p>
+            </div>
+        </div>
+    </details>
+
+    <script src="./dom.js"></script>
+</body>
+</html>
